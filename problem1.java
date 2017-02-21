@@ -10,7 +10,9 @@
 */
 
 public class problem1 {
+  
   public static void main(String[] args) {
+    
     System.out.println(multiples(10));
     System.out.println(multiples(1000));
   }
