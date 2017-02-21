@@ -13,14 +13,19 @@ public class problem1 {
   
   public static void main(String[] args) {
     
+    // prints sum of multiples of 3 or 5 under 10
     System.out.println(multiples(10));
+
+    // prints sum of multiples of 3 or 5 under 1000
     System.out.println(multiples(1000));
   }
   
   public static int multiples(int n)
   {
+    // initialzes sum
     int sum = 0;
 
+    // adds the multiples of 3 or 5 under n to sum
     for (int i = 0; i < n; i++) {
       
       if ((i % 3 == 0) || (i % 5 == 0)) {
@@ -29,6 +34,7 @@ public class problem1 {
 
    }
 
+   // returns final sum 
    return sum;
   }
 }

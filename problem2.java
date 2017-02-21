@@ -16,26 +16,35 @@ public class problem2 {
 
   public static void main(String[] args) {
     
+    // prints out the sum of the even Fibonacci numbers less than 4,000,000
     System.out.println(evenFibSum(4000000));
   }
   
   public static long fibonacci(int n) {
     
+    // base cases for Fibonacci sequence
     if (n == 0) {
       return 0;
     }
     else if (n == 1) {
       return 1;
     }
+
+    // Fibonacci sequence using recursion
     else {
       return fibonacci(n - 1) + fibonacci(n - 2);
     }
-
   }
 
   public static int evenFibSum(int limit) {
+    
+    // starts sum at 2 to skip the first 2 terms (0 and 1) and start at 1
     int n = 2;
+
+    // initializes sum
     int sum = 0; 
+
+    // adds even Fibonacci numbers under limit
     while (fibonacci(n) <= limit) {
       if (fibonacci(n) % 2 == 0) {
         // System.out.println(fibonacci(n));
@@ -43,6 +52,8 @@ public class problem2 {
       }
       n++;
     }
+
+    // returns final sum
     return sum;
   }
 
