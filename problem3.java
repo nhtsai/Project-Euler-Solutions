@@ -21,7 +21,7 @@ public class problem3 {
 		long factoredNum = n;
 		long largestFactor = 0;
 		
-		// dividing by prime factor
+		// dividing by prime factors, starting with 2
 		int c = 2;
 
 
@@ -35,14 +35,18 @@ public class problem3 {
 				largestFactor = c;
 			}
 			else {
+
+				// incrementing c by 1 to check for other prime factors
 				c++;
 			}
 		}
 
+		// if the remaining factored number is greater than the largest factor, the remaining factored number is now the largest prime factor
 		if (factoredNum > largestFactor) {
 			largestFactor = factoredNum;
 		}
 
+		// return the largest prime factor of n
 		return largestFactor;
 	}
 
