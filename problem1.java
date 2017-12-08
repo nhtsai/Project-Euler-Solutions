@@ -6,10 +6,10 @@
  * Find the sum of all the multiples of 3 or 5 below 1000.
  *
  * @author  Nathan Tsai
- * @version 1.0, 3 Dec 2017
+ * @version 1.0, 8 Dec 2017
  * @since   13 Sep 2016
  */
-public class problem1 {
+public class Problem1 {
 
   /**
    * Runs the program and prints the solution of the problem to System.out.
@@ -50,4 +50,4 @@ public class problem1 {
    // Returns final sum
    return sum;
   }
-} // End class problem1
+} // End class Problem1

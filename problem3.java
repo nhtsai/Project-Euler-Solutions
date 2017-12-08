@@ -4,10 +4,10 @@
  * What is the largest prime factor of the number 600851475143?
  *
  * @author  Nathan Tsai
- * @version 1.0, 3 Dec 2017
+ * @version 1.0, 8 Dec 2017
  * @since   20 Feb 2017
  */
-public class problem3 {
+public class Problem3 {
 
 	/**
 	 * Runs the program and prints the solution of the problem to System.out.
@@ -94,4 +94,4 @@ public class problem3 {
 		return true;
 	}
 
-}
+} // End class Problem3

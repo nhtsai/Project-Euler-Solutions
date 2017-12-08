@@ -9,10 +9,10 @@
  * find the sum of the even-valued terms.
  *
  * @author  Nathan Tsai
- * @version 1.0, 3 Dec 2017
+ * @version 1.0, 6 Dec 2017
  * @since   20 Feb 2017
  */
-public class problem2 {
+public class Problem2 {
 
   /**
    * Runs the program and prints the solution of the problem to System.out.
@@ -83,4 +83,4 @@ public class problem2 {
     // Returns final sum
     return sum;
   }
-} // End class problem2
+} // End class Problem2
