@@ -3,10 +3,11 @@
  * If we list all the natural numbers below 10
  * that are multiples of 3 or 5, we get 3, 5, 6 and 9.
  * The sum of these multiples is 23.
+ *
  * Find the sum of all the multiples of 3 or 5 below 1000.
  *
  * @author  Nathan Tsai
- * @version 1.0, 8 Dec 2017
+ * @version 1.0, 1 Jan 2018
  * @since   13 Sep 2016
  */
 public class Problem1 {
