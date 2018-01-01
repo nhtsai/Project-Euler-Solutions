@@ -76,7 +76,4 @@ public class Problem6 {
 
     return (sum * sum);
   }
-
-
-
 }
