@@ -1,4 +1,4 @@
-/*
+/**
  * Project Euler Problem 4 - Largest Palindrome Product:
  * A palindromic number reads the same both ways.
  * The largest palindrome made from the product of

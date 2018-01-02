@@ -1,4 +1,4 @@
-/*
+/**
  * Collatz Conjecture :
  * Pick any whole number. If it's even, divide it by 2. If it's odd, multiply
  * it by 3 and add 1. Then repeat with the answer as the input.

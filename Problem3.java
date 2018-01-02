@@ -78,7 +78,16 @@ public class Problem3 {
 	 * @return   the boolean true or false if the number is prime or not
 	 */
 	public static boolean isPrime(long n) {
+		// Handles 1 case.
+		if (n == 1) {
+			return false;
+		}
 
+		// Handles 2 case.
+		if (n == 2) {
+			return true;
+		}
+		
 		// Checks if n is even
 		if (n % 2 == 0) {
 			return false;
