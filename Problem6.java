@@ -16,7 +16,6 @@
  * @version 1.0, 1 Jan 2018
  * @since   1 Jan 2018
  */
-
 public class Problem6 {
 
   /**
