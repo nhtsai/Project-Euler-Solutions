@@ -7,9 +7,10 @@
  * Find the sum of all the multiples of 3 or 5 below 1000.
  *
  * @author  Nathan Tsai
- * @version 1.0, 1 Jan 2018
+ * @version 1.0, 3 Jan 2018
  * @since   13 Sep 2016
  */
+
 public class Problem1 {
 
   /**
@@ -23,8 +24,8 @@ public class Problem1 {
     // System.out.println(multiples(10));
 
     // Prints sum of multiples of 3 or 5 under 1000
-    System.out.println(
-      "The sum of all multiples of 3 or 5 below 1,000 is: " + multiples(1000));
+    System.out.println("The sum of all multiples of 3 or 5 below 1,000 is: " +
+      multiples(1000));
   }
 
   /**
@@ -34,8 +35,7 @@ public class Problem1 {
    * @param  n the integer bound under which to find multiples of 3 or 5
    * @return   the sum of the multiples of 3 or 5
    */
-  public static int multiples(int n)
-  {
+  public static int multiples(int n) {
     // Initialzes sum
     int sum = 0;
 

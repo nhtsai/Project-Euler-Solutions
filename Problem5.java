@@ -7,9 +7,10 @@
  * all of the numbers from 1 to 20?
  *
  * @author  Nathan Tsai
- * @version 1.0, 1 Jan 2018
+ * @version 1.0, 3 Jan 2018
  * @since   28 Dec 2017
  */
+
 public class Problem5 {
 
   /**
@@ -18,10 +19,8 @@ public class Problem5 {
    * @param args the input taken in from the command line during runtime
    */
   public static void main(String[] args) {
-    // System.out.println(smallestDiv(1, 10));
-
     System.out.println("The smallest positive number that is evenly divisible" +
-    " by all of the numbers from 1 to 20 is: " + smallestDiv(1, 20));
+      " by all of the numbers from 1 to 20 is: " + smallestDiv(1, 20));
   }
 
   /**
@@ -93,4 +92,4 @@ public class Problem5 {
       n++;
     }
   }
-}
+} // End class Problem5

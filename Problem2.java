@@ -10,9 +10,10 @@
  * find the sum of the even-valued terms.
  *
  * @author  Nathan Tsai
- * @version 1.0, 1 Jan 2018
+ * @version 1.0, 3 Jan 2018
  * @since   20 Feb 2017
  */
+
 public class Problem2 {
 
   /**

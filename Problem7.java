@@ -6,9 +6,10 @@
  * What is the 10001st prime number?
  *
  * @author  Nathan Tsai
- * @version 1.0, 1 Jan 2018
+ * @version 1.0, 3 Jan 2018
  * @since   1 Jan 2018
  */
+
 public class Problem7 {
 
   /**
@@ -18,7 +19,6 @@ public class Problem7 {
    */
   public static void main(String[] args) {
     System.out.println("The 1001st prime number is: " + nthPrime(10001));
-
   }
 
   /**
@@ -54,8 +54,8 @@ public class Problem7 {
 	 */
 	public static boolean isPrime(int n) {
 
-    // Handles 1 case.
-    if (n == 1) {
+    // Handles <= 1 cases.
+    if (n <= 1) {
       return false;
     }
 
@@ -79,4 +79,4 @@ public class Problem7 {
 		// Returns true if n is prime
 		return true;
 	}
-}
+} // End class Problem7

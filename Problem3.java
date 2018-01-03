@@ -5,9 +5,10 @@
  * What is the largest prime factor of the number 600851475143?
  *
  * @author  Nathan Tsai
- * @version 1.0, 1 Jan 2018
+ * @version 1.0, 3 Jan 2018
  * @since   20 Feb 2017
  */
+
 public class Problem3 {
 
 	/**
@@ -16,8 +17,6 @@ public class Problem3 {
 	 * @param args the input taken in from the command line during runtime
 	 */
 	public static void main(String[] args) {
-
-		// Prints out the largest prime factor under 600,851,475,143
 		System.out.println(
 			"The largest prime factor of the number 600,851,475,143 is: " +
 			primeFac(600851475143L));
@@ -79,7 +78,7 @@ public class Problem3 {
 	 */
 	public static boolean isPrime(long n) {
 		// Handles 1 case.
-		if (n == 1) {
+		if (n <= 1) {
 			return false;
 		}
 
@@ -87,7 +86,7 @@ public class Problem3 {
 		if (n == 2) {
 			return true;
 		}
-		
+
 		// Checks if n is even
 		if (n % 2 == 0) {
 			return false;
@@ -103,5 +102,4 @@ public class Problem3 {
 		// Returns true if n is prime
 		return true;
 	}
-
 } // End class Problem3

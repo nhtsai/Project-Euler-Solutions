@@ -7,9 +7,10 @@
  * Find the largest palindrome made from the product of two 3-digit numbers.
  *
  * @author  Nathan Tsai
- * @version 1.0, 1 Jan 2018
+ * @version 1.0, 3 Jan 2018
  * @since   4 Dec 2017
  */
+
 public class Problem4 {
 
   /**
@@ -18,7 +19,6 @@ public class Problem4 {
    * @param args the input taken in from the command line during runtime
    */
   public static void main(String[] args) {
-
     System.out.println(
       "The largest palindrome made from the product of two 3-digit numbers is: "
       + largestPalindrome(3));
@@ -32,6 +32,8 @@ public class Problem4 {
    * @return   the largest palindrome product of two numDigits-digit numbers
    */
   public static int largestPalindrome(int numDigits) {
+
+    // Initialize variables.
     int limit = 1;
     int firstNum = 0;
     int secondNum = 0;
@@ -77,8 +79,8 @@ public class Problem4 {
     // Converts number to a string
     String numberString = "" + number;
 
+    // Initialize variables.
     boolean result = false;
-
     int index = 0;
 
     // Checks number from both sides of the string to see if they are equal
