@@ -32,17 +32,20 @@ public class Problem17 {
   }
 
   /**
-   * Returns the integer 0.
+   * Returns the sum of the numbers in the specified range by iterating from
+   * start to end and adding up the number of letters in each number.
    *
-   * @param  n the
-   * @return   the
+   * @param  start the start of the range, inclusive
+   * @param  end   the end of the range, inclusive
+   * @return       the sum of the number of letters of all of the number in
+   *               the range of numbers, inclusive
    */
   public static int sumLetters(int start, int end) {
 
     int sum = 0;
 
+    // Iterate through the specified range and add up the number of letters.
     for (int i = start; i <= end; i++) {
-      System.out.println(i);
       sum += numLetters(i);
     }
 
