@@ -12,7 +12,7 @@
  * Evaluate the sum of all the amicable numbers under 10000.
  *
  * @author  Nathan Tsai
- * @version 1.0, 14 Jan 2018
+ * @version 1.0, 15 Jan 2018
  * @since   13 Jan 2018
  */
 
@@ -25,7 +25,7 @@ public class Problem21 {
    */
   public static void main(String[] args) {
     System.out.println(
-      "The Problem21 answer is: " + amicable(10000));
+      "The sum of all the amicable numbers under 10000 is: " + amicable(10000));
   }
 
   /**
@@ -48,11 +48,12 @@ public class Problem21 {
       // Set b to be sum of divisors of a.
       b = sumDivisors(a);
 
-      // Adds a and b to the sum if a == b and b is under the maxBound
-      if (a == sumDivisors(b) && b < maxBound) {
-        sum = sum + a + b;
+      // Adds one amicable number to the sum
+      // The other amicable number of the pair will be added later as
+      // a increments.
+      if (a == sumDivisors(b) && a != b && b < maxBound) {
+        sum = sum + a;
       }
-
     }
 
     return sum;
