@@ -21,22 +21,48 @@ import java.io.*;
 
 public class Problem22 {
 
-  private static String filename = "Problem22_Names.txt";
-
   /**
    * Runs the program and prints the solution of the problem to System.out.
    *
    * @param args the input taken in from the command line during runtime
    */
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
+
+    System.out.println(871198282);
+
+    System.out.println(sumFile("Problem22_Names.txt"));
+  }
+
+  /**
+   * Returns the sum of all the names in the provided file by adding up the
+   * character values of all the names to a cumulative sum.
+   *
+   * @param filename the
+   * @return         the
+   */
+  public static int sumFile(String filename) {
+
+    int fileSum = 0;
 
     File file = new File(filename);
 
-    try {
-      Scanner scan = new Scanner(file);
+    // TODO: SORT FILE ALPHABETICALLY AND INDEX IT
 
-      while (scan.hasNextLine()) {
-        System.out.println();
+
+    try {
+      Scanner scanner = new Scanner(file);
+
+
+
+
+
+
+      scanner.useDelimiter("\",\"");
+
+      while(scanner.hasNext()) {
+        String name = scanner.next();
+        fileSum = fileSum + (sumLetters(name) * name.getIndex);
+        // fileSum += sumLetters(name);
       }
 
     } catch (FileNotFoundException e) {
@@ -44,18 +70,33 @@ public class Problem22 {
       System.exit(1);
     }
 
-    System.out.println(
-      "The Problem22 answer is: ");
+    return fileSum;
   }
 
   /**
-   * Returns the integer 0.
+   * Returns the sum of the characters in the specified name by casting each
+   * character to integers and adding to a sum.
    *
-   * @param  n the
-   * @return   the
+   * @param name the name of which to calculate its value
+   * @return     the sum of the characters of the name
    */
   public static int sumLetters(String name) {
-    int sum;
+
+    // Initialize the sum variable.
+    int sum = 0;
+
+    // Value that can be subtracted to count letter values from 1.
+    int letterValue = (int) ('A') - 1;
+
+    // Convert name to all uppercase to work with char values.
+    String sumString = name.toUpperCase();
+
+    // Iterate through the uppercase name.
+    for (int index = 0; index < sumString.length(); index++) {
+
+      // Add character values of the uppercase name to find sum.
+      sum += (int) (sumString.charAt(index) - letterValue);
+    }
 
     return sum;
   }
