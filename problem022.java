@@ -1,7 +1,7 @@
 /**
  * Project Euler Problem 22 - Names Scores:
  *
- * Using p022_names.txt, a 46K text file containing over
+ * Using problem022_names.txt, a 46K text file containing over
  * five-thousand first names, begin by sorting it into alphabetical order.
  * Then working out the alphabetical value for each name,
  * multiply this value by its alphabetical position in the list to obtain a name score.
@@ -12,7 +12,7 @@
  * What is the total of all the name scores in the file?
  *
  * @author  Nathan Tsai
- * @version 1.0, 16 Jan 2018
+ * @version 1.0, 27 Dec 2019
  * @since   15 Jan 2018
  */
 
@@ -30,7 +30,7 @@ public class Problem22 {
 
     System.out.println(871198282);
 
-    System.out.println(sumFile("Problem22_Names.txt"));
+    System.out.println(sumFile("problem022_names.txt"));
   }
 
   /**
